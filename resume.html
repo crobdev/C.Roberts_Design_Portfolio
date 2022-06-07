@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="responsive_mobile300.css">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="icon" type="x-icon" href="favicon.ico">
+<link rel="icon" type="x-icon" href="img/favicon.ico">
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -44,9 +44,9 @@
     <div class="navbar-links">
       <ul>
         <li><a href="cover.html">Cover&nbsp;Letter</a></li>
-        <li><a href="resume.html">Resume</a></li>
         <li><a href="graphics.html">Graphics</a></li>
-        <li><a href="contact2.html">Contact</a></li>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
 </div>
 </nav>
@@ -70,11 +70,11 @@
 <!----------------------------------------------------------LEFT SECTION TOP--------------------------------------------------------->
 <!----------------------------------------------------------1ST LEFT IMG--------------------------------------------------------->
 
-<div class="row">
-	<div class="col-3">
+<div class="grid-container">
+  <div class="grid-item1">
 <h3> <center>click me <style></style></center></h3>
 <center><p><span class="iconify" data-icon="emojione-v1:down-arrow" style=" width: 10%; height: 10%;"></span></span></p></center>
-<center><img id="myImg1" src="sandwich_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg1" src="img/png/sandwich_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -108,7 +108,7 @@
 
 </script>
 
-<center><img id="myImg2" src="surf_shop_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg2" src="img/png/surf_shop_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -140,7 +140,7 @@ span.onclick = function() {
 }
 </script>
 
-<center><img id="myImg3" src="rainydayloans_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg3" src="img/png/rainydayloans_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
 
 <!-- The Modal -->
@@ -175,18 +175,28 @@ span.onclick = function() {
 
 </div>
 <!----------------------------------------------------------MID SECTION TOP  Resume--------------------------------------------------------->	
-	<div class="col-6"><h2>Resume</h2><br>
+<div class="grid-item2">
+    <h2>Resume</h2><br>
 
  <div id="resume">	
-</div> 
-</div> 
+
+ 
+  <!----------------------------------------------------------Download Resume--------------------------------------------------------->
+  <div class="download">
+      <a href="img/pdf/Colin_Roberts_Resume.pdf" class="download"></a>
+  <!-----<a href="img/pdf/Colin_Roberts_Resume.pdf"><span class="iconify" data-icon="zondicons:download" style="color: blue; padding-right:75%;"data-width="75" data-height="75"></span></a> --->
+  
+</div>
+  </div>
+  <p> Click button to download the Resume in PDF</p>
+  </div>
 
 <!----------------------------------------------------------RIGHT SECTION TOP--------------------------------------------------------->
 <!----------------------------------------------------------1ST RIGHT IMG--------------------------------------------------------->
-<div class="col-3">
+<div class="grid-item1">
 <h3> <center>click me</center></h3>
 <center><p><span class="iconify" data-icon="emojione-v1:down-arrow" style=" width: 10%; height: 10%;"></span></span></p></center>
-<center><img id="myImg4" src="barber_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg4" src="img/png/barber_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -220,7 +230,7 @@ span.onclick = function() {
 
 </script>
 <!----------------------------------------------------------2ND RIGHT IMG --------------------------------------------------------->
-<center><img id="myImg5" src="recordshop_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg5" src="img/png/recordshop_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -252,7 +262,7 @@ span.onclick = function() {
 }
 </script>
 <!----------------------------------------------------------3RD RIGHT IMG--------------------------------------------------------->
-<center><img id="myImg6" src="horseman_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
+<center><img id="myImg6" src="img/png/horseman_logo.png" alt="DIGITAL DESIGNS BY, Colin Roberts"></center>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -288,7 +298,7 @@ span.onclick = function() {
 
 </div>
 
-
+</div>
 
 <!----------------------------------------------------------FOOTER--------------------------------------------------------->
 <!----------------------------------------------------------FOOTER--------------------------------------------------------->
@@ -296,16 +306,16 @@ span.onclick = function() {
 <footer class="main-footer">
 
 
-  <div class="row">
-  <div class="col-13">
+  <div class="grid-container-footer">
+    <div class="grid-item-footer1">
   </div>
-  <div class="col-14">
+  <div class="grid-item-footer2">
     <div class="footer-link"> 
       <ul>
         <li><a href="cover.html">Cover&nbsp;Letter</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="graphics.html">Graphics</a></li>
-    	<li><a href="contact2.html">Contact</a></li>
+        <li><a href="animation.html">Animation</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
   </div>
   <section id="footer" class="py-5">
@@ -318,20 +328,21 @@ span.onclick = function() {
    
     </section> 
   </div>
-   <div class="col-15">
-  
+
+  <div class="grid-item-footer1">
   </div>
   </div> 
-  <div class="row">
-    <div class="col-16">
+
+  <div class="grid-container-footer">
+    <div class="grid-item-footer1">
   </div> 
-   <div class="col-17">
+   <div class="grid-item-footer2">
    
     <center><bold>
     <p>Copyright &copy; 2022 Colin Roberts Designs</p>
    </center></bold>
   </div>
-   <div class="col-18">
+   <div class="grid-item-footer1">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="iconify" data-icon="emojione-v1:top-arrow"></span><span class="iconify" data-icon="emojione:top-hat"></span></button>
   </div> 
   
