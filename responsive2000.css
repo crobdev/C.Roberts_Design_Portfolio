@@ -805,3 +805,125 @@ object-fit: cover;
   font-size: 30px;
   
 }
+
+/*--------------------Content Card Contact2-------------------------*/
+
+.outer-div,
+.inner-div {
+  height: $card-height;
+  max-width: $card-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.outer-div {
+  perspective: 900px;
+  perspective-origin: 50% calc(50% - 18em);
+}
+
+.inner-div {
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: 400;
+  color: $black;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
+  transform-style: preserve-3d;
+
+  
+
+
+  /*&:hover .front__face-photo,
+  &:hover .front__footer {
+    opacity: 1;
+  }*/
+}
+
+
+
+.front,
+ {
+  position: relative;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.front {
+  cursor: pointer;
+  height: 100%;
+  background: $white;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.front__bkg-photo {
+  position: relative;
+  height: 150px;
+  width: $card-width;
+  background: url("cardback.jpg")
+    no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.front__face-photo {
+  position: relative;
+  top: -60px;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid $white;
+  background: url("profilepic.png")
+    no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+}
+
+.front__text {
+  position: relative;
+  top: -55px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-size: 18px;
+  backface-visibility: hidden;
+
+  .front__text-header {
+    font-weight: 700;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .front__text-para {
+    position: relative;
+    top: -5px;
+
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+
+
+}
