@@ -12,7 +12,7 @@ body{
         justify-content: center;
         align-items: center;
         background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);  
-        overflow: hidden;  
+        overflow-y: scroll !important; 
         filter: drop-shadow(0 0 10px white);  
        }  
        
@@ -25,7 +25,7 @@ body{
     font-weight: lighter;
     overflow: hidden;
     border-right: 2px solid orange;
-    font-size-adjust: inherit;
+    font-size:100px;
     
     white-space: nowrap;
     margin: 0 auto;
@@ -33,6 +33,7 @@ body{
         typing 7s steps(20, end),
         cursor 0.5s step-end infinite;
     /*animation-delay: 5s;*/
+    scroll-snap-align: end;
 }
 @keyframes typing {
     from{ width: 0 }
@@ -52,7 +53,7 @@ body{
     background-color: rgb(79, 80, 82);
     color: rgb(13, 202, 240);
     font-size: 50px;
-    animation: clickit 8s;
+    animation: clickit 10s;
 }
 @keyframes clickit {
     0% {opacity: 0}
@@ -66,4 +67,378 @@ body{
     color: rgb(2, 8, 10);
   }
 
+  .brand-title {
+    font-size: 3.5rem;
+    margin: 1.5rem;
+    text-shadow: 2px 2px 4px #efebeb;
+  color: #000000;
+  animation: blink 2s infinite;
+  -webkit-animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #333;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+  
+  .brand-title :hover {
+    font-size: 3.5rem;
+    margin: .5rem;
+    text-decoration: none;
+  }
+/*------------------------------------------------SCREEN WIDTH 900-----------------------*/
+  @media only screen and (max-width: 900px){
 
+    .exec h2{
+        color: #fff;
+        
+        font-family: 'Teko', sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        border-right: 2px solid orange;
+        font-size:60px;
+        
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+            typing 7s steps(20, end),
+            cursor 0.5s step-end infinite;
+        /*animation-delay: 5s;*/
+    }
+    @keyframes typing {
+        from{ width: 0 }
+        to{ width: 100% }
+    }
+    @keyframes cursor{
+        from, to {
+            border-color: transparent;}
+        50% {
+            border-color: rgb(11, 209, 244);
+        }
+    }
+
+
+    .brand-title {
+        font-size: 2.5rem;
+        margin: 1.5rem;
+        text-shadow: 2px 2px 4px #efebeb;
+      color: #000000;
+      animation: blink 2s infinite;
+      -webkit-animation: blink 2s infinite;
+      }
+      
+      @keyframes blink {
+        78% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        79%{
+           color: #333;
+        }
+        80% {
+          
+          text-shadow: none;
+        }
+        81% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        82% {
+          color: #333;
+          text-shadow: none;
+        }
+        83% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        92% {
+          color: #333;
+          text-shadow: none;
+        }
+        92.5% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+      }
+      
+      .brand-title :hover {
+        font-size: 2.5rem;
+        margin: .5rem;
+        text-decoration: none;
+      }
+
+
+  }
+
+
+/*------------------------------------------------SCREEN WIDTH 500-----------------------*/
+  @media only screen and (max-width: 500px){
+
+    .exec h2{
+        color: #fff;
+        
+        font-family: 'Teko', sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        border-right: 2px solid orange;
+        font-size:40px;
+        
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+            typing 7s steps(20, end),
+            cursor 0.5s step-end infinite;
+        /*animation-delay: 5s;*/
+    }
+    @keyframes typing {
+        from{ width: 0 }
+        to{ width: 100% }
+    }
+    @keyframes cursor{
+        from, to {
+            border-color: transparent;}
+        50% {
+            border-color: rgb(11, 209, 244);
+        }
+    }
+
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        text-shadow: 2px 2px 4px #efebeb;
+      color: #000000;
+      animation: blink 2s infinite;
+      -webkit-animation: blink 2s infinite;
+      }
+      
+      @keyframes blink {
+        78% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        79%{
+           color: #333;
+        }
+        80% {
+          
+          text-shadow: none;
+        }
+        81% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        82% {
+          color: #333;
+          text-shadow: none;
+        }
+        83% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        92% {
+          color: #333;
+          text-shadow: none;
+        }
+        92.5% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+      }
+      
+      .brand-title :hover {
+        font-size: 1.5rem;
+        margin: .5rem;
+        text-decoration: none;
+      }
+
+    /*------------------------------------------------SCREEN WIDTH 400-----------------------*/
+  @media only screen and (max-width: 400px){
+
+    .exec h2{
+        color: #fff;
+        
+        font-family: 'Teko', sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        border-right: 2px solid orange;
+        font-size:30px;
+        
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+            typing 7s steps(20, end),
+            cursor 0.5s step-end infinite;
+        /*animation-delay: 5s;*/
+    }
+    @keyframes typing {
+        from{ width: 0 }
+        to{ width: 100% }
+    }
+    @keyframes cursor{
+        from, to {
+            border-color: transparent;}
+        50% {
+            border-color: rgb(11, 209, 244);
+        }
+    }
+
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        text-shadow: 2px 2px 4px #efebeb;
+      color: #000000;
+      animation: blink 2s infinite;
+      -webkit-animation: blink 2s infinite;
+      }
+      
+      @keyframes blink {
+        78% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        79%{
+           color: #333;
+        }
+        80% {
+          
+          text-shadow: none;
+        }
+        81% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        82% {
+          color: #333;
+          text-shadow: none;
+        }
+        83% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        92% {
+          color: #333;
+          text-shadow: none;
+        }
+        92.5% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+      }
+      
+      .brand-title :hover {
+        font-size: 1.0rem;
+        margin: .5rem;
+        text-decoration: none;
+      }
+
+      /*------------------------------------------------SCREEN WIDTH 300-----------------------*/
+  @media only screen and (max-width: 300px){
+
+    .exec h2{
+        color: #fff;
+        
+        font-family: 'Teko', sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        border-right: 2px solid orange;
+        font-size:20px;
+        
+        white-space: nowrap;
+        margin: 0 auto;
+        animation:
+            typing 7s steps(20, end),
+            cursor 0.5s step-end infinite;
+        /*animation-delay: 5s;*/
+    }
+    @keyframes typing {
+        from{ width: 0 }
+        to{ width: 100% }
+    }
+    @keyframes cursor{
+        from, to {
+            border-color: transparent;}
+        50% {
+            border-color: rgb(11, 209, 244);
+        }
+    }
+
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        text-shadow: 2px 2px 4px #efebeb;
+      color: #000000;
+      animation: blink 2s infinite;
+      -webkit-animation: blink 2s infinite;
+      }
+      
+      @keyframes blink {
+        78% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        79%{
+           color: #333;
+        }
+        80% {
+          
+          text-shadow: none;
+        }
+        81% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        82% {
+          color: #333;
+          text-shadow: none;
+        }
+        83% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+        92% {
+          color: #333;
+          text-shadow: none;
+        }
+        92.5% {
+          color: inherit;
+          text-shadow: inherit;
+        }
+      }
+      
+      .brand-title :hover {
+        font-size: 1.0rem;
+        margin: .5rem;
+        text-decoration: none;
+      }
