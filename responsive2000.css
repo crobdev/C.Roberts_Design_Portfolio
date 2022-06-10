@@ -409,22 +409,19 @@ outline: 2px solid rgb(147, 13, 64) !important;
   text-decoration: none;
   cursor: pointer;
 }
-
 /*--------------------------------------------------------------------Download Button----------------------------------------*/
 
- .download {
-   background-color: white;
-  content: url('https://api.iconify.design/gis/layer-download.svg?color=blue&width=50&height=50');
-  background-repeat: no-repeat;
-  position: fixed;
-  padding: 30px;
-  border-radius: 25%;
-  z-index: 1;
+.download {
+  background-color: white;
+ content: url('https://api.iconify.design/gis/layer-download.svg?color=blue&width=75&height=75');
+ background-repeat: no-repeat;
+ z-index: 2;
+ position: fixed;
 }
 
 .download:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 25%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 25%;
 }
 
 /*----------------------------------------------------------- graphics Page for images---------------------------------------------------*/
